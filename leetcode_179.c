@@ -24,7 +24,7 @@ char* largestNumber(int* nums, int numsSize)
         temp = temp + strlen(temp); //根據當下銜接上的num[]字串的字元數量有多少個，temp指標往後移動多少
     }
 
-    if(result[0] == '0')
+    if(result[0] == '0') //特殊情況，當比較0、0時 
         return "0\0";
     
     return result;
